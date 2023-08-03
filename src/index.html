@@ -11,19 +11,30 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid text-center p-5">
+      <h1>Generador de cartas</h1>
+      <div class="card mx-auto h-75 align-middle" id="card">
+        <div
+          class="card-header border-bottom-0 bg-white text-start"
+          id="paloHeader"
+        ></div>
+        <div
+          class="card-body text-center align-middle my-auto"
+          id="numero"
+        ></div>
+        <div class="card-footer border-top-0 bg-white text-end">
+          <span id="paloFooter"></span>
+        </div>
       </div>
+      <button class="btn" id="btn">Nueva carta</button>
     </div>
   </body>
 </html>
